@@ -2,7 +2,7 @@ const time = document.querySelector('.preview__watch-time');
 function showTime() {
     const options = {hour: 'numeric', minute: 'numeric',};
     const date = new Date();
-    const currentTime = date.toLocaleTimeString('ru-RU', options);
+    const currentTime = date.toLocaleTimeString();
     time.textContent = currentTime;
     setTimeout(showTime, 1000);
     showDate()

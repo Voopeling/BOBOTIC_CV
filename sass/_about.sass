@@ -1,0 +1,167 @@
+.about
+    width: 100%
+    height: 850px
+    display: flex
+    background: rgba(29, 29, 29, 1)
+    position: relative
+    &__me
+        max-width: 960px
+        padding: 0 0 0 65px
+        background: rgba(37, 37, 37, 1)
+        height: 100%
+        position: relative
+        flex: 1
+        &-wrapper
+            display: flex
+            column-gap: 45px
+            height: 100%
+            &-photo
+                max-width: 382px
+                flex: 1
+                .photo__bg
+                    height: 410px
+                    background: rgba(117, 51, 53, 0.7)
+                    position: relative
+                    margin: 85px 0 0 0
+                    &-small
+                        width: 82.5%
+                        height: 409px
+                        z-index: 2
+                        background: rgba(201, 68, 72, 0.8)
+                        position: absolute
+                        bottom: 0
+                        right: 0
+                    img
+                        position: absolute
+                        bottom: 0
+                        z-index: 3
+                        width: 100%
+                .languages__wrapper
+                    margin: 20px 0 0 0
+                    position: relative
+                    h2
+                        text-align: center
+                    &-items
+                        width: 200px
+                        height: 382px
+                        transform: rotate(-90deg)
+                        position: absolute
+                        top: -19px
+                        left: 91px
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        .languages__item
+                            h3
+                                font-family: 'Quicksand', sans-serif
+                                font-weight: 500
+                                font-size: 24px
+                                color: #fff
+                                margin: 0
+                            &-container
+                                height: 50px
+                                width: 200px
+                                margin: 12px 0 0 0
+                                background: rgba(255, 255, 255, 0.3)
+                                &-active
+                                    height: 100%
+                                    background: rgba(0, 255, 240, 1)
+                                .russian
+                                    width: 100px
+                                .belarusian
+                                    width: 80px
+                                .english
+                                    width: 50px
+            &-content
+                display: flex
+                flex-direction: column
+                height: calc( 100% - 35px )
+                row-gap: 110px
+                position: relative
+                padding: 35px 0 0 0
+                &-items
+                    h2
+                        z-index: 2
+                    p
+                        margin: 50px 0 0 0
+        &-wrapper:after
+            content: ''
+            position: absolute
+            width: calc( 100% - 65px )
+            height: 85px
+            top: 0
+            background: rgba(117, 51, 53, 0.7)
+            z-index: 1
+    .education
+        max-width: 960px
+        padding: 0 65px 0 0
+        background: rgba(29, 29, 29, 1)
+        flex: 1
+        &__text
+            margin: 0 0 0 80px
+            h2
+                margin: 35px 0 0 0
+            p
+                margin: 50px 0 0 0
+            p:nth-child(2)
+                margin: 30px 0 0 0
+        &__skills
+            margin: 78px 0 0 80px
+            &-wrapper
+                max-width: 795px
+                height: 333px
+                margin: 58px 0 0 0
+                display: flex
+                justify-content: space-between
+                &-name
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    li
+                        text-transform: uppercase
+                        font-size: 25px
+                &-value
+                    max-width: 600px
+                    height: 333px
+                    flex: 1
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    .skills__container
+                        height: 25px
+                        width: 100%
+                        background: rgba(255, 255, 255, 0.3)
+                        .skills__value
+                            height: 100%
+                            background: rgba(0, 255, 240, 1)
+                        .html
+                            width: 360px
+                        .css
+                            width: 240px
+                        .js
+                            width: 120px
+                        .figma
+                            width: 240px
+                        .github
+                            width: 180px
+    .education:after
+        content: ''
+        position: absolute
+        width: 895px
+        height: 85px
+        top: 0
+        background: rgba(117, 51, 53, 0.5)
+        z-index: 1
+
+.about__title
+    font-family: 'Quicksand', sans-serif
+    font-weight: 700
+    text-transform: uppercase
+    color: #fff
+    font-size: 32px
+
+.about__text
+    font-family: 'Quicksand', sans-serif
+    font-weight: 400
+    color: #fff
+    font-size: 30px
