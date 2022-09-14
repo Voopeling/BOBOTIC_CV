@@ -295,6 +295,116 @@
   font-size: 30px;
 }
 
+.portfolio {
+  width: 100%;
+  min-height: 850px;
+  background: rgb(29, 29, 29);
+}
+.portfolio__wrapper {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 60px 0 0 0;
+  height: 720px;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio__item {
+  width: 500px;
+  position: relative;
+}
+.portfolio__item-content {
+  position: absolute;
+  width: 370px;
+  height: 390px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(6, 6, 6, 0.4);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.portfolio__item-content h2 {
+  color: rgb(0, 255, 240);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+.portfolio__item-content p {
+  color: rgb(0, 255, 240);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 300px;
+  margin: 30px auto 0;
+}
+.portfolio__item-content .button__wrapper {
+  width: 300px;
+  line-height: 45px;
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: linear-gradient(90deg, #753335 45%, #3a9a94 60%);
+  background-size: 400% 400%;
+  text-align: center;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: all 2s;
+}
+.portfolio__item-content .button__wrapper span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-45deg);
+  top: 19px;
+  right: 100px;
+}
+.portfolio__item-content .button__wrapper span:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  top: 11px;
+  right: -13px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.portfolio__item-content .button__wrapper span:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  top: 22px;
+  right: -24px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.portfolio__item-content .button__wrapper:hover {
+  background-position: 100% 49%;
+}
+.portfolio__item-content .button__wrapper:hover span:after {
+  opacity: 1;
+}
+.portfolio__item-content .button__wrapper:hover span:before {
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.portfolio__item:hover .portfolio__item-content {
+  opacity: 1;
+}
+
 body {
   margin: 0;
 }
