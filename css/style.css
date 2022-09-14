@@ -376,7 +376,8 @@
   border-right: 2px solid #fff;
   top: 11px;
   right: -13px;
-  transition: all 0.3s;
+  transition: all 0.4s;
+  transition-delay: 0.4s;
   opacity: 0;
 }
 .portfolio__item-content .button__wrapper span:before {
@@ -388,17 +389,19 @@
   border-right: 2px solid #fff;
   top: 22px;
   right: -24px;
-  transition: all 0.3s;
+  transition: all 0.4s;
+  transition-delay: 0s;
   opacity: 0;
 }
 .portfolio__item-content .button__wrapper:hover {
   background-position: 100% 49%;
 }
 .portfolio__item-content .button__wrapper:hover span:after {
+  transition-delay: 0s;
   opacity: 1;
 }
 .portfolio__item-content .button__wrapper:hover span:before {
-  transition-delay: 0.3s;
+  transition-delay: 0.4s;
   opacity: 1;
 }
 .portfolio__item:hover .portfolio__item-content {
