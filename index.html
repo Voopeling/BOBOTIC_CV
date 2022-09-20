@@ -159,6 +159,41 @@
                 </div>
             </div>
         </section>
+        <section class="code">
+            <div class="code__wrapper">
+                <div class="code__content">
+                    <pre>
+function getTimeOfDay() {
+    const date = new Date();
+    const hours = date.getHours();
+    <span class="red">if</span> (hours < 6){
+        const img = new Image();
+        img.src = <span class="grean">https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/night/${bgNum}.jpg</span>
+        img.onload = () => {      
+        body.style.backgroundImage = url(${img.src});
+    }} <span class="red">else if</span> (hours < 12){
+        const img = new Image();
+        img.src = <span class="grean">https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/morning/${bgNum}.jpg</span>
+        img.onload = () => {      
+        body.style.backgroundImage = url(${img.src});
+    }} <span class="red">else if</span> (hours < 18){
+        const img = new Image();
+        img.src = <span class="grean">https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/afternoon/${bgNum}.jpg</span>
+        img.onload = () => {      
+        body.style.backgroundImage = url(${img.src});
+    }} <span class="red">else</span> {
+        const img = new Image();
+        img.src = <span class="grean">https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/evening/${bgNum}.jpg</span>
+        img.onload = () => {      
+        body.style.backgroundImage = url(${img.src});
+    }}
+    setTimeout(getTimeOfDay, 30000);
+}
+getTimeOfDay()
+                    </pre>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="./js/index.js"></script>
 </body>
