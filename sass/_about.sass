@@ -42,36 +42,45 @@
                     h2
                         text-align: center
                     &-items
-                        width: 200px
-                        height: 382px
-                        transform: rotate(-90deg)
-                        position: absolute
-                        top: -19px
-                        left: 91px
+                        max-width: 382px
+                        height: 200px
+                        flex: 1
                         display: flex
-                        flex-direction: column
                         justify-content: space-between
+                        margin: 35px 0 0 0
                         .languages__item
+                            width: 87px
+                            height: 100%
+                            display: flex
+                            justify-content: flex-end
+                            position: relative
                             h3
+                                transform: rotate(-90deg)
+                                transform-origin: 0% 50%
+                                margin: 0
+                                height: 27px
+                                position: absolute
                                 font-family: 'Quicksand', sans-serif
                                 font-weight: 500
                                 font-size: 24px
                                 color: #fff
-                                margin: 0
+                                bottom: -12px
+                                left: 15px
                             &-container
-                                height: 50px
-                                width: 200px
-                                margin: 12px 0 0 0
+                                width: 50px
+                                height: 100%
                                 background: rgba(255, 255, 255, 0.3)
+                                display: flex
+                                align-items: flex-end
                                 &-active
-                                    height: 100%
                                     background: rgba(0, 255, 240, 1)
+                                    width: 100%
                                 .russian
-                                    width: 100px
+                                    height: 100px
                                 .belarusian
-                                    width: 80px
+                                    height: 80px
                                 .english
-                                    width: 50px
+                                    height: 50px
             &-content
                 display: flex
                 flex-direction: column
