@@ -3,10 +3,10 @@
     min-height: 850px
     background: rgba(29, 29, 29, 1)
     &__wrapper
-        max-width: 1700px
+        max-width: 1720px
         margin: 0 auto
-        padding: 60px 0 0 0
-        height: 720px
+        padding: 60px 10px 0 10px
+        min-height: 720px
         display: flex
         justify-content: space-between
     &__item
@@ -98,3 +98,25 @@
     &__item:hover
         .portfolio__item-content
             opacity: 1
+
+@media screen and ( max-width: 1540px )
+    .portfolio
+        min-height: 600px
+        &__wrapper
+            min-height: 580px
+            justify-content: space-around
+        &__item
+            width: 400px
+            img
+                width: 100%
+
+@media screen and ( max-width: 1270px )
+    .portfolio
+        &__wrapper
+            flex-direction: column
+            align-items: center
+            min-height: 720px
+            row-gap: 30px
+            padding: 80px 10px 0
+        &__item
+            width: 500px

@@ -8,6 +8,7 @@
         overflow: auto
         position: relative
         top: 120px
+        
     &__wrapper::-webkit-scrollbar
         background-color: rgba(255, 255, 255, 0.3)
         width: 16px
@@ -29,3 +30,20 @@
             .grean
                 color: rgba(0, 255, 240, 1)
 
+@media screen and ( max-width: 1750px )
+    .code
+        &__wrapper
+            max-width: calc( 100% - 30px )
+
+@media screen and ( max-width: 1560px )
+    .code
+        &__content
+            pre
+                font-size: 20px
+
+@media screen and ( max-width: 1320px )
+    .code
+        &__content
+            pre
+                font-size: 18px
+                padding: 30px 0 0 40px
